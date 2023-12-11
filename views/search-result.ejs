@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Result </title>
+    <link rel="stylesheet"  type="text/css" href="/main.css" />
+</head>
+<body>
+    <h1>Here are the posts you searched:</h1>
+    <ul>
+        <% results.forEach(function(post) { %>
+            <li><%= post.topic %>, <%= post.text %></li> 
+        <% }); %>
+    </ul>
+</body>
+</html>
